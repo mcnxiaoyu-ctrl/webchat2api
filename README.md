@@ -1,7 +1,7 @@
 <h1 align="center">webchat2api</h1>
 
 <p align="center">
-  <img src="web/public/webchat2api-logo.png" alt="webchat2api logo" width="180" />
+  <img src="assets/logo.png" alt="webchat2api logo" width="180" />
 </p>
 
 <p align="center">webchat2api 是一个将 GPT/ChatGPT Web 与 Grok/xAI Web 能力封装为标准 API 接口的代理服务项目，提供 FastAPI 后端、Next.js Web 管理端、OpenAI 风格 API、GPT/Grok 账号池管理、文生文/文生图试验页以及 Docker 自托管部署能力。</p>
@@ -23,6 +23,16 @@
 - 图片账号轮换：图片生成/编辑遇到失效账号时，会跳过该账号并尝试下一个可用账号
 - 账号导出：支持 JSON/ZIP，access-token-only 账号也可导出，缺失字段输出为空字符串
 - 部署方式：Docker CLI、Docker Compose
+
+## 界面预览
+
+<p align="center">
+  <img src="assets/screenshot-overview.png" alt="webchat2api 界面预览 1" width="780" />
+</p>
+
+<p align="center">
+  <img src="assets/screenshot-chat.png" alt="webchat2api 界面预览 2" width="780" />
+</p>
 
 ## 快速开始
 
@@ -201,7 +211,7 @@ curl http://localhost:83/api/accounts/export \
 
 ## 配置
 
-核心配置见 `.env.example`、`config.example.json` 和 [`技术文档.md`](./技术文档.md)。如需本地覆盖配置，请复制示例文件：
+核心配置见 `.env.example`、`config.example.json` 和 [技术指南](./docs/technical-guide.md)。如需本地覆盖配置，请复制示例文件：
 
 ```bash
 cp config.example.json config.json
@@ -224,7 +234,11 @@ cp config.example.json config.json
 
 ## 文档
 
-完整技术文档见：[`技术文档.md`](./技术文档.md)。
+完整技术指南见：[docs/technical-guide.md](./docs/technical-guide.md)。
+
+功能状态见：[docs/feature-status.md](./docs/feature-status.md)。
+
+上游 SSE 会话协议参考见：[docs/upstream-sse-conversation.md](./docs/upstream-sse-conversation.md)。
 
 ## 版本
 

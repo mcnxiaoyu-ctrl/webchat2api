@@ -46,6 +46,7 @@ web_dist/
 # Process records
 docs/research-record.md
 docs/task-tracking-log.md
+docs/review.md
 
 # Editors and local tooling
 .idea/

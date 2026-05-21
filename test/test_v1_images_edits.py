@@ -47,7 +47,7 @@ class ImageEditsTests(unittest.TestCase):
                 "n": "1",
                 "response_format": "b64_json",
             },
-            files={"image": ("chery_studio.png", load_asset_bytes("chery_studio.png"), "image/png")},
+            files={"image": ("cherry-studio.png", load_asset_bytes("cherry-studio.png"), "image/png")},
             timeout=300,
         )
         self.assertEqual(response.status_code, 200, response.text)
@@ -79,8 +79,8 @@ class ImageEditsTests(unittest.TestCase):
                 "stream": "true",
             },
             files=[
-                ("image", ("image.png", load_asset_bytes("image.png"), "image/png")),
-                ("image", ("image_edit.png", load_asset_bytes("image_edit.png"), "image/png")),
+                ("image", ("task-overview.png", load_asset_bytes("task-overview.png"), "image/png")),
+                ("image", ("image-edit.png", load_asset_bytes("image-edit.png"), "image/png")),
             ],
             stream=True,
             timeout=300,
